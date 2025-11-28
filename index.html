@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sue Lim">
+    <meta name="description" content="Portfolio home page for Web Development course.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
+    <title>Sue Lim | Home</title>
+</head>
+
+<body class="bg-gradient-to-r from-[#2E266D] to-[#0B0320] text-white min-h-screen">
+
+    <!-- NAVIGATION -->
+    <header class="w-full">
+        <nav class="flex items-center justify-between p-4">
+            <a href="/">
+                <img src="/assets/img/logo-375px.png" alt="Logo" class="w-14">
+            </a>
+
+            <ul class="hidden md:flex gap-8 text-lg">
+                <li><a href="/" class="hover:text-primary">Home</a></li>
+                <li><a href="/mywork.html" class="hover:text-primary">Portfolio</a></li>
+                <li><a href="/about.html" class="hover:text-primary">About</a></li>
+                <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="flex flex-col-reverse md:flex-row items-center justify-between px-10 py-20">
+
+        <!-- LEFT CONTENT -->
+        <div class="md:w-1/2 space-y-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-primary">Sue Lim</h1>
+            <h6 class="text-2xl font-bold">Tech Enthusiast</h6>
+            <h5 class="text-xl">Full Stack Developer</h5>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+            <img src="/assets/img/logo-600px.png" class="w-3/4 md:w-full animate-slideIn" alt="Main Graphic">
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto text-center p-4 text-sm">
+        <p>© 2023 Copyright: <a href="/about" class="underline">Sue Lim</a></p>
+    </footer>
+
+</body>
+</html>

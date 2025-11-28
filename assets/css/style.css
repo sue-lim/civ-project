@@ -1,0 +1,16 @@
+/* Google Fonts imported in HTML */
+
+/* Custom animations */
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.3);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1.8s ease-in-out forwards;
+}
+
