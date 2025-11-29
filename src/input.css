@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .nav-hover-behaviour{
+        @apply hover:underline hover:decoration-2 hover:decoration-white hover:underline-offset-8 transition
+    }
+
+    .nav-link-gap{
+        @apply flex items-center justify-between p-4
+    }
+
+    .footer-bottom-sticky-behaviour{
+        @apply fixed bottom-0 left-0 w-full text-center p-4 text-sm bg-black/30 backdrop-blur
+    }
+
+    .h1-main-title{
+        @apply text-xl mb-10 mt-10 sm:text-6xl font-bold text-primary
+    }
+}

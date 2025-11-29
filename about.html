@@ -16,32 +16,33 @@
 
     <!-- NAVIGATION -->
     <header class="w-full">
-        <nav class="flex items-center justify-between p-4">
+        <nav class="nav-link-gap">
             <a href="/">
                 <img src="/assets/img/logo-375px.png" alt="Logo" class="w-14">
             </a>
 
-            <ul class="hidden md:flex gap-8 text-lg">
-                <li><a href="/" class="hover:text-primary">Home</a></li>
-                <li><a href="/mywork.html" class="hover:text-primary">Portfolio</a></li>
-                <li><a href="/about.html" class="hover:text-primary">About</a></li>
-                <li><a href="/contact.html" class="hover:text-primary">Contact</a></li>
+            <ul class="hidden md:flex gap-4 text-sm">
+                <li><a href="/" class="nav-hover-behaviour">Home</a></li>
+                <li><a href="/mywork.html" class="nav-hover-behaviour">Portfolio</a></li>
+                <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
+                <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
+<li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- MAIN CONTAINER -->
-    <main class="flex flex-col-reverse md:flex-row items-center justify-between px-10">
+    <main class="flex flex-col justify-between px-10">
 
         <!-- RIGHT IMAGE -->
-        <div class="flex justify-center mb-10">
-        <img src="/assets/img/portrait-img-1186x1188.JPG" class="rounded-full object-cover border-white filter grayscale  " alt="Portrait ">
-        </div>
+        <!-- <div class="flex justify-center mb-10">
+        <img src="/assets/img/portrait-img-1186x1188.JPG" class="rounded-full object-cover border-white filter grayscale" alt="Portrait ">
+        </div> -->
 
-        <!-- LEFT CONTENT -->
-        <div class="md:w-4/4 space-y-4">
-            <h1 class="text-5xl md:text-6xl font-bold text-primary">About</h1>
-            <p class="text-xl text-justify md: mb-10">Hi there 👋
+<!-- LEFT CONTENT -->
+<h1 class="text-xl mb-10 mt-10 sm:text-6xl font-bold text-primary">About</h1>
+
+            <p class="text-lg text-justify md: mb-10">Hi there 👋
 I'm Sue, currently a student with SheCodes Australia as part of the 2022/2023 cohort, and a current student at 
 <abbr title="Technical and Further Education">TAFE</abbr> 
 North Metro completing a Certificate IV in Programming. This journey has been exciting, challenging, and incredibly rewarding—I still have lots to learn, but I’m eager to keep going and growing.
@@ -79,7 +80,7 @@ Each new concept and project helps me build more confidence and deepen my unders
     </main>
 
     <!-- FOOTER -->
-    <footer class="fixed bottom-0 left-0 w-full text-center p-4 text-sm bg-black/30 backdrop-blur">
+    <footer class="footer-bottom-sticky-behaviour">
         <p><a href="/copyright.html">© 2023 Copyright: </a>
             <a href="/about.html" class="underline">Sue Lim</a>
         </p>
