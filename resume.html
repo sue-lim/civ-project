@@ -11,7 +11,10 @@
     <title>Sue Lim | About me</title>
 </head>
 
-<body class="bg-gradient-to-r from-[#2E266D] to-[#0B0320] text-white h-screen md:overflow-hidden overflow-auto flex flex-col">
+<body class="bg-gradient-to-r from-[#2E266D] to-[#0B0320] text-white flex flex-col">
+
+
+
 
     <!-- NAVIGATION -->
     <header class="w-full">
@@ -32,10 +35,10 @@
     </header>
 
 <!-- MAIN CONTAINER -->
-<main class="flex flex-col justify-between px-10">
+<main class="flex flex-col justify-between px-10 pb-20">
 
 
-<h1 class="text-6xl mb-10 mt-10 md:text-6xl font-bold text-primary">Resume</h1>
+<h1 class="text-6xl mb-10 mt-10 md:text-6xl font-bold text-primary">Résumé</h1>
 
 <section class="text-lg text-justify md: mb-10">
 <h2 class="text-xl text-xl pb-6">OBJECTIVE</h2>
@@ -45,53 +48,41 @@
 </p>
 </section>
 
-<div class="grid grid-cols-3 gap-3 md:grid-cols-3 sm:grid-cols-1">
+<div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
 
-<section class="text-justify sm:mr-0">
-<h2 class="text-xl text-xl pb-6">SKILLS </h2>
-<h3>Programming Languages: </h3>
-<p>HTML, CSS, Python, Django, React, JavaScript, C#, OOP Fundamentals
-Version Control: 
-GIT</p>
-<h3>Project Management Tools: </h3>
-<p>Confluence, JIRA, Scrum, Agile</p>
-<h3>Microsoft Office Suite: </h3>
-<p>Word, Excel, PowerPoint, Visio, OneNote, Projects, Publisher, Power BI, SharePoint</p>
-</section>
+    <!-- SKILLS -->
+    <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+        <h2 class="text-xl pb-6">SKILLS</h2>
+        <ul class="list-disc pl-5 space-y-3">        
+        <li><p><strong>Programming Languages:</strong></p><p>HTML, CSS, Python, Django, React, JavaScript, C#, OOP Fundamentals<br>Version Control: GIT</p></li>
+        <li><p><strong>Project Management Tools:</strong></p><p>Confluence, JIRA, Scrum, Agile</p></li>
+        <li><p><strong>Microsoft Office Suite:</strong></p><p>Word, Excel, PowerPoint, Visio, OneNote, Projects, Publisher, Power BI, SharePoint</p></li>
+        </ul>
+    </section>
 
-<!-- Education -->
-<section class="text-justify sm:mr-0">
-<h2 class="text-xl pb-6">EDUCATION</h2>
-<ul>
-<li>2023 – Current 
-Certificate IV Information Technology | Programming 
-Perth North Metropolitan TAFE </li>
-<li>2022 – 2023 
-She Codes Plus 
-Coding Boot Camp
-She Codes Australia</li>
-<li>2002 – 2004
-Postgraduate Diploma Electronic Commerce
-Curtin University of Technology</li>
-</ul>
-</section>
+    <!-- EDUCATION -->
+    <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+        <h2 class="text-xl pb-6">EDUCATION</h2>
+        <ul class="list-disc pl-5 space-y-3">
+            <li>2023 – Current<p><strong>Certificate IV Information Technology in Programming</strong></p><em>Perth North Metropolitan TAFE</em></li>
+            <li>2022 – 2023<p><strong>She Codes Plus Coding Boot Camp</strong></p><em>She Codes Australia</em></li>
+            <li>2002 – 2004<p><strong>Postgraduate Diploma Electronic Commerce</strong><p><em>Curtin University</em></p></li>
+        </ul>
+    </section>
 
-<!-- Experiences -->
-<section class="text-justify sm:mr-0 ">
-<h2 class="text-xl pb-6">EXPERIENCE </h2>
-<ul>
-<li><p>Associate Software Engineer | Bankwest – Information Technology
-February 2024 – Present</p></li>
-<li>Personal Assistant | Bankwest – Financial Services
-January 2012 – January 2024</li>
-<li>Personal Assistant | Bankwest – Human Resources / Corporate Affairs
-October 2009 – December 2011</li>
-<li>Document Management/Index Officer | Bankwest – Business Banking 
-February 2008 – September 2009</li>
-</ul>
-</section>
+    <!-- EXPERIENCE -->
+    <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+        <h2 class="text-xl pb-6">EXPERIENCE</h2>
+        <ul class="list-disc pl-5 space-y-3">
+            <li>Feb 2024 – Present<p><strong>Associate Software Engineer</strong></p><em>Bankwest – IT</em></li>
+            <li>2012 – 2024<p><strong>Executive Assistant</strong></p><em>Bankwest – Financial Services</em></li>
+            <li>2009 – 2011<p><strong>Personal Assistant</strong></p><em>Bankwest – HR & Corporate Affairs</em></li>
+            <li>2008 – 2009<p><strong>Document Management / Index Officer</strong></p><em>Bankwest – Business Banking</em></li>
+        </ul>
+    </section>
 
 </div>
+
 </main>
 
 <!-- FOOTER -->
