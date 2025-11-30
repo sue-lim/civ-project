@@ -12,3 +12,9 @@
             statusDiv.textContent = "Message sent!";
         }, 1500);
     });
+
+    //Slider 
+    function moveToSlide(index) {
+        document.getElementById("carousel-inner").style.transform =
+          `translateX(-${index * 100}%)`;
+      }
