@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
     <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
+    <script defer src="/assets/js/main.js"></script>
     <title>Sue Lim | Home</title>
 </head>
 
@@ -15,11 +16,15 @@
 
     <!-- NAVIGATION -->
     <header class="w-full">
-        <nav class="nav-link-gap">
+        <!-- NAV BAR -->
+        <nav class="flex justify-between items-center p-4">
+
+            <!-- Logo -->
             <a href="/">
-                <img src="/assets/img/logo-375px.png" alt="Logo" class="w-14">
+                <img src="/assets/img/logo-375px.png" alt="return to homepage icon" class="w-14">
             </a>
 
+            <!-- Desktop Menu -->
             <ul class="hidden md:flex gap-4 text-sm">
                 <li><a href="/" class="nav-hover-behaviour">Home</a></li>
                 <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
@@ -28,7 +33,27 @@
                 <li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
                 <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
             </ul>
+
+            <!-- Hamburger for Mobile / Sml View  -->
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+            </button>
         </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="hidden peer-checked:block rounded absolute right-0 w-120 h-50 p-4 z-40 bg-slate-500 opacity-400 top-20 text-center md:hidden ">
+            <ul class="flex flex-col divide-y-2 divide-gray-300">
+                <li><a href="/" class="hamburger-menu-link">Home</a></li>
+                <li><a href="/about.html" class="hamburger-menu-link">About</a></li>
+                <li><a href="/my-portfolio.html" class="hamburger-menu-link">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="hamburger-menu-link">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="hamburger-menu-link">Resume</a></li>
+                <li><a href="/contact.html" class="hamburger-menu-link">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- MAIN CONTAINER -->
@@ -43,7 +68,8 @@
 
         <!-- RIGHT IMAGE -->
         <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
-            <img src="/assets/img/portrait-img-1186x1188.JPG" class=" rounded-full object-cover border-white filter grayscale animate-slideIn" alt="Portrait">
+            <img src="/assets/img/portrait-img-1186x1188.JPG"
+                class="rounded-full object-cover border-white filter grayscale animate-slideIn" alt="Portrait">
         </div>
     </main>
 
@@ -55,4 +81,5 @@
     </footer>
 
 </body>
+
 </html>

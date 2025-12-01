@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
     <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
-    <script defer src ="/assets/js/main.js"></script>
+    <script defer src="/assets/js/main.js"></script>
     <title>Sue Lim | Contact</title>
 </head>
 
@@ -16,11 +16,15 @@
 
     <!-- NAVIGATION -->
     <header class="w-full">
-        <nav class="nav-link-gap">
+        <!-- NAV BAR -->
+        <nav class="flex justify-between items-center p-4">
+
+            <!-- Logo -->
             <a href="/">
-                <img src="/assets/img/logo-375px.png" alt="Logo" class="w-14">
+                <img src="/assets/img/logo-375px.png" alt="return to homepage icon" class="w-14">
             </a>
 
+            <!-- Desktop Menu -->
             <ul class="hidden md:flex gap-4 text-sm">
                 <li><a href="/" class="nav-hover-behaviour">Home</a></li>
                 <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
@@ -29,35 +33,57 @@
                 <li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
                 <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
             </ul>
+
+            <!-- Hamburger for Mobile / Sml View  -->
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+            </button>
         </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="hidden peer-checked:block rounded absolute right-0 w-120 h-50 p-4 z-40 bg-slate-500 opacity-400 top-20 text-center md:hidden ">
+            <ul class="flex flex-col divide-y-2 divide-gray-300">
+                <li><a href="/" class="hamburger-menu-link">Home</a></li>
+                <li><a href="/about.html" class="hamburger-menu-link">About</a></li>
+                <li><a href="/my-portfolio.html" class="hamburger-menu-link">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="hamburger-menu-link">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="hamburger-menu-link">Resume</a></li>
+                <li><a href="/contact.html" class="hamburger-menu-link">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <!-- MAIN CONTAINER -->
     <main class="px-10">
 
-<div class="">
+        <div class="">
 
-    <div class="min-w-md max-w-md">
-        <h2 class="text-xl mb-10 mt-10 sm:text-6xl font-bold text-primary">Contact me</h2>
+            <div class="min-w-md max-w-md">
+                <h2 class="text-xl mb-10 mt-10 sm:text-6xl font-bold text-primary">Contact me</h2>
 
-        <form id="contactForm" class="flex space-y-4 mb-4 bg-transparent">
-<!-- INPUT NAME FIELD -->
-            <label class="text-sm font-medium">Name</label>
-            <input type="text" name="from_name" class="w-full px-3 py-2 rounded border border-gray-500 bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-white">
-<!-- INPUT EMAIL FIELD -->
-            <label class="text-sm font-medium">Email</label>
-            <input type="email" name="from_email" class="w-full px-3 py-2 rounded border border-gray-500 bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-white">
-<!-- INPUT MSG FIELD -->
-            <label class="text-sm font-medium">Message</label>
-            <textarea name="message" rows="4" class="w-full px-3 py-2 rounded border border-gray-500 bg-transparent text-white resize-none focus:outline-none focus:ring-2 focus:ring-white"></textarea>
-<!-- SEND BUTTON -->
-            <input type="submit" value="Send" class="mt-8 px-4 py-3 rounded border border-white bg-transparent text-white font-semibold cursor-pointer hover:bg-gray-500 transition">
+                <form id="contactForm" class="flex space-y-4 mb-4 bg-transparent">
+                    <!-- INPUT NAME FIELD -->
+                    <label class="text-sm font-medium">Name</label>
+                    <input type="text" name="from_name"
+                        class="w-full px-3 py-2 rounded border border-gray-500 bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <!-- INPUT EMAIL FIELD -->
+                    <label class="text-sm font-medium">Email</label>
+                    <input type="email" name="from_email"
+                        class="w-full px-3 py-2 rounded border border-gray-500 bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <!-- INPUT MSG FIELD -->
+                    <label class="text-sm font-medium">Message</label>
+                    <textarea name="message" rows="4"
+                        class="w-full px-3 py-2 rounded border border-gray-500 bg-transparent text-white resize-none focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                    <!-- SEND BUTTON -->
+                    <input type="submit" value="Send"
+                        class="mt-8 px-4 py-3 rounded border border-white bg-transparent text-white font-semibold cursor-pointer hover:bg-gray-500 transition">
 
-            <div id="statusMessage" class="text-center text-white mt-2"></div>
-        </form>
-    </div>
-</div>
-
-    
+                    <div id="statusMessage" class="text-center text-white mt-2"></div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -68,4 +94,5 @@
     </footer>
 
 </body>
+
 </html>

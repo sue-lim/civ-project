@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Sue Lim">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
     <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
-    <script defer src ="/assets/js/main.js"></script>
+    <script defer src="/assets/js/main.js"></script>
     <title>Sue Lim | My TAFE Projects</title>
 </head>
 
@@ -16,11 +16,15 @@
 
     <!-- NAVIGATION -->
     <header class="w-full">
-        <nav class="nav-link-gap">
+        <!-- NAV BAR -->
+        <nav class="flex justify-between items-center p-4">
+
+            <!-- Logo -->
             <a href="/">
-                <img src="/assets/img/logo-375px.png" alt="Logo" class="w-14">
+                <img src="/assets/img/logo-375px.png" alt="return to homepage icon" class="w-14">
             </a>
 
+            <!-- Desktop Menu -->
             <ul class="hidden md:flex gap-4 text-sm">
                 <li><a href="/" class="nav-hover-behaviour">Home</a></li>
                 <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
@@ -29,49 +33,75 @@
                 <li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
                 <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
             </ul>
+
+            <!-- Hamburger for Mobile / Sml View  -->
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+            </button>
         </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="hidden peer-checked:block rounded absolute right-0 w-120 h-50 p-4 z-40 bg-slate-500 opacity-400 top-20 text-center md:hidden ">
+            <ul class="flex flex-col divide-y-2 divide-gray-300">
+                <li><a href="/" class="hamburger-menu-link">Home</a></li>
+                <li><a href="/about.html" class="hamburger-menu-link">About</a></li>
+                <li><a href="/my-portfolio.html" class="hamburger-menu-link">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="hamburger-menu-link">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="hamburger-menu-link">Resume</a></li>
+                <li><a href="/contact.html" class="hamburger-menu-link">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
-<!-- MAIN CONTAINER -->
-<main class="flex flex-col justify-between px-10 pb-20">
+    <!-- MAIN CONTAINER -->
+    <main class="flex flex-col justify-between px-10 pb-20">
 
-    <h1 class="text-6xl mb-10 mt-10 md:text-6xl font-bold text-primary">TAFE Projects</h1>
+        <h1 class="text-6xl mb-10 mt-10 md:text-6xl font-bold text-primary">TAFE Projects</h1>
 
-    <section class="text-lg text-justify md: mb-10">
-    <h2 class="text-xl text-xl pb-6">Samples</h2>
-    <p class="mb-10">Here is a sample of the projects I have completed throughout the duration of my studies in the Certificate IV in Programming at <abbr title="Technical and Further Education"></abbr>TAFE, to keep updated please view my <a href="https://github.com/sue-lim" target="_blank>"> GITHUB Repository 🔗</a></p>
-</section>
-
-    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-
-        <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
-            <h2 class="text-xl pb-6">Horoscope API
-            </h2>
-            <img src="/assets/img/img-api-horoscope-502x718.png" alt="Horoscope API Page Img"/>
+        <section class="text-lg text-justify md: mb-10">
+            <h2 class="text-xl text-xl pb-6">Samples</h2>
+            <p class="mb-10">Here is a sample of the projects I have completed throughout the duration of my studies in
+                the Certificate IV in Programming at <abbr title="Technical and Further Education"></abbr>TAFE, to keep
+                updated please view my <a href="https://github.com/sue-lim" target="_blank"> GITHUB Repository 🔗</a>
+            </p>
         </section>
-    
-        <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
-            <h2 class="text-xl pb-6">Fact of the Day API
-            </h2>
-            <img src="/assets/img/img-api-fact-of-the-day-502x718.png" alt="Fact of the Day API Img"/>
-        </section>
-    
-        <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
-            <h2 class="text-xl pb-6">Inspirational Quote API
-            </h2>
-            <img src="/assets/img/img-api-inspirational-quote-502x718.png" alt="Horoscope API Page Img" alt="Inspirational API Img"/>
-        </section>
-    
-    </div>
 
-</main>
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
 
-<!-- FOOTER -->
-<footer class="footer-bottom-sticky-behaviour">
-<p><a href="/copyright.html">© 2023 Copyright: </a>
-<a href="/about.html" class="underline">Sue Lim</a>
-</p>
-</footer>
+            <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+                <h2 class="text-xl pb-6">Horoscope API </h2>
+                <a href="https://dev.screencraft.net.au/web_users/limpui/phase-4/index.html" target="_blank"><img
+                        src="/assets/img/img-api-horoscope-502x718.png" alt="Horoscope API Page Image"></a>
+            </section>
+
+            <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+                <h2 class="text-xl pb-6">Fact of the Day API
+                </h2>
+                <a href="https://dev.screencraft.net.au/web_users/limpui/phase-4/index.html" target="_blank">
+                    <img src="/assets/img/img-api-fact-of-the-day-502x718.png" alt="Fact of the Day API Image"></a>
+            </section>
+
+            <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+                <h2 class="text-xl pb-6">Inspirational Quote API
+                </h2>
+                <a href="https://dev.screencraft.net.au/web_users/limpui/phase-4/index.html" target="_blank"> <img
+                        src="/assets/img/img-api-inspirational-quote-502x718.png" alt="Inspirational API Image"></a>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-bottom-sticky-behaviour">
+        <p><a href="/copyright.html">© 2023 Copyright: </a>
+            <a href="/about.html" class="underline">Sue Lim</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>
